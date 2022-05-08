@@ -1,0 +1,32 @@
+{
+  "name": "logic-lights",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-scripts": "2.1.8",
+    "rete": "1.4.1",
+    "rete-area-plugin": "0.2.1",
+    "rete-connection-plugin": "0.7.0",
+    "rete-context-menu-plugin": "0.3.7",
+    "rete-react-render-plugin": "0.2.0"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
