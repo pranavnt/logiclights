@@ -307,9 +307,6 @@ class NorComponent extends Rete.Component {
   editor.addNode(n2);
   editor.addNode(add);
 
-  editor.connect(n1.outputs.get("bool"), add.inputs.get("bool1"));
-  editor.connect(n2.outputs.get("bool"), add.inputs.get("bool2"));
-
   editor.on(
     "process nodecreated noderemoved connectioncreated connectionremoved",
     async () => {
