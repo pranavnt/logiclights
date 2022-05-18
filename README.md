@@ -1,4 +1,3 @@
-# Rete.js (dataflow, node editor)
+# LogicLights ✨
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/pranavnt/pen/LYQxmJK](https://codepen.io/pranavnt/pen/LYQxmJK).
-
+Visual programming language for logic circuits
