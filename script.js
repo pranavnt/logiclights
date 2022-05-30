@@ -320,3 +320,15 @@ class NorComponent extends Rete.Component {
   AreaPlugin.zoomAt(editor);
   editor.trigger("process");
 })();
+
+
+// toggle for additional information
+
+function toggleInfo() {
+  var box = document.getElementById("info");
+  if (box.style.display == "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}

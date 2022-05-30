@@ -11,7 +11,72 @@
   </head>
   <body>
     <!-- partial:index.partial.html -->
-    <h1 style="height: 5vh; text-align: center">LogicLights ✨</h1>
+    <div style="position: relative">
+      <h1
+        style="
+          height: 5vh;
+          text-align: center;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        "
+      >
+        LogicLights ✨
+      </h1>
+      <button
+        onclick="toggleInfo()"
+        style="
+          border: none;
+          background-color: transparent;
+          border-radius: 100%;
+          position: absolute;
+          right: 3vh;
+          top: 3vh;
+          cursor: pointer;
+        "
+      >
+        <img
+          src="https://cloud-6zreztl03-hack-club-bot.vercel.app/0q.png"
+          alt="more info"
+          style="font-size: 1em; height: 3vh"
+        />
+      </button>
+      <div
+        id="info"
+        style="
+          position: absolute;
+          top: 7vh;
+          right: 3vh;
+          width: 80vw;
+          max-width: 300px;
+          background-color: #ffe263;
+          padding: 20px;
+          font-size: 1.1vw;
+          border-radius: 10px;
+        "
+      >
+        How to use:
+        <ul>
+          <li>Right click to add elements (switches or gates)</li>
+          <li>A switch is an input (tick the box for the input to be true)</li>
+          <li>You can pick from AND, OR, NAND, and NOR gates</li>
+          <li>
+            Each gate requires two inputs, which can come from switches or
+            another gate or a combination
+          </li>
+          <li>
+            To connect two elements, click and drag your cursor from the green
+            circle on your first element to the green circle on your second
+            element
+          </li>
+          <li>The true/false text in the gate is the output</li>
+          <li>
+            You can move elements around by clicking and dragging the rectangles
+          </li>
+          <li>You can zoom in and out to create more room for elements</li>
+        </ul>
+      </div>
+    </div>
     <div style="height: 90vh" id="rete"></div>
     <!-- partial -->
     <script src="https://cdn.jsdelivr.net/npm/rete@1.4.5/build/rete.min.js"></script>
