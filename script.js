@@ -99,9 +99,9 @@ const VueBoolControl = {
       this.update();
     },
     update() {
-      if (this.ikey) {
-        this.putData(this.ikey, this.value);
-      }
+      if (this.ikey)
+        this.putData(this.ikey, this.value)
+      this.emitter.trigger('process');
     },
   },
   mounted() {
@@ -161,7 +161,7 @@ class AndComponent extends Rete.Component {
     let inp2 = inputs["bool2"][0];
 
     outputs["bool"] =
-      inp1 == undefined ? false : inp1 && inp2 == undefined ? false : inp2;
+      (inp1 == undefined ? false : inp1) && (inp2 == undefined ? false : inp2);
     console.log(outputs["bool"]);
 
     this.editor.nodes
